@@ -75,7 +75,7 @@ body {
 }
 
 .main-inner {
-background-size: auto;
+  background-size: auto;
 }
 
 .main-index {
@@ -97,7 +97,7 @@ background-size: auto;
 }
 
 .hotel-list {
-background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .advantages {
@@ -305,11 +305,11 @@ background-color: #ffffff;
 }
 
 .hotel-filter {
-display: flex;
+  display: flex;
 }
 
 .hotel-card-list  {
-width: 1056px;
+  width: 1056px;
 }
 
 .hotel-list-title {
@@ -350,7 +350,7 @@ width: 1056px;
 }
 
 .breadcrumbs {
-width: 110px;
+  width: 110px;
 }
 
 .button-catalog {
