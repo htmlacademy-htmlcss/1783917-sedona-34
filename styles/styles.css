@@ -303,6 +303,10 @@ body {
   padding: 0;
 }
 
+.section-search-title-index {
+  margin-top: 86px;
+}
+
 .section-search-desc {
   margin-top: 0;
   margin-bottom: 30px;
@@ -330,6 +334,10 @@ body {
   margin-top: 22px;
   padding: 12px 15px;
   border-radius: 4px;
+}
+
+.section-search-index .button {
+  margin-top: 27px;
 }
 
 .subscribe {
@@ -369,6 +377,10 @@ body {
   margin-top: 46px;
 }
 
+.subscribe-index .field {
+  margin-top: 0;
+}
+
 .email .field {
   padding-left: 22px;
 }
@@ -388,6 +400,10 @@ body {
   margin-top: 30px;
   margin-bottom: 46px;
   color: var(--black-color);
+}
+
+.subscribe-desc-index {
+  color: var(--white-color);
 }
 
 .subscribe-desc-catalog {
@@ -433,7 +449,7 @@ body {
 .page-footer-container {
   display: flex;
   width: 1200px;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 0;
   text-align: center;
   justify-content: space-between;
@@ -471,7 +487,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 8px;
-  margin-left: 5;
   padding: 0;
 }
 
@@ -792,6 +807,8 @@ body {
 }
 
 .reset {
+  font-size: 16px;
+  line-height: 20px;
   color: var(--white-color);
   background-color: var(--black-color);
   border: none;
