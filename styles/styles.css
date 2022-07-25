@@ -51,6 +51,7 @@ body {
   padding: 0;
   list-style: none;
   flex-direction: row;
+
 }
 
 .navigation {
@@ -58,6 +59,8 @@ body {
   width: 1200px;
   height: 65px;
   margin: 0 auto;
+  flex-wrap: wrap;
+  z-index: 5;
 }
 
 .navigation-list {
@@ -71,6 +74,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   list-style-type: none;
+  max-height: 65px;
  }
 
 .navigation-link {
@@ -104,6 +108,9 @@ body {
   padding-left: 215px;
   margin-left: 37px;
   border-bottom: none;
+  flex-wrap: wrap;
+  z-index: 5;
+  justify-content: flex-end;
 }
 
 .item:hover {
@@ -135,10 +142,10 @@ body {
   text-align: center;
   border-radius: 4px;
   text-transform: uppercase;
-  width: 160px;
-  padding: 9px 0px 8px 0px;
+  max-width: 160px;
+  padding: 9px 34px 8px 35px;
   margin-top: -3px;
-  margin-left: 29px;
+  margin-left: 27px;
 }
 
 .main-container {
@@ -194,7 +201,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: -1px;
   margin-bottom: 31px;
 }
 
@@ -265,6 +272,7 @@ body {
 .blue-background {
   color: var(--white-color);
   background-color: var(--light-blue-color);
+  min-height: 384px;
 }
 
 .advantages-description {
@@ -293,6 +301,7 @@ body {
   margin: 0;
   margin-top: -10px;
   padding: 0;
+  margin-top: -7px;
 }
 
 .section-search-title {
@@ -313,7 +322,7 @@ body {
 .section-search-desc {
   margin-top: 0;
   margin-bottom: 30px;
-  margin-left: 304px;
+  margin-left: 295px;
   margin-right: 304px;
   max-width: 592px;
 }
@@ -386,6 +395,7 @@ body {
 
 .email .field {
   padding-left: 22px;
+  padding-right: 5px;
 }
 
 .subscribe-title-catalog {
@@ -394,7 +404,7 @@ body {
   font-weight: 700;
   color: var(--black-color);
   text-transform: uppercase;
-  padding-top: 94px;
+  padding-top: 97px;
   padding-bottom: 30px;
   margin: 0;
 }
@@ -418,7 +428,7 @@ body {
 .subscribe-catalog {
   background-color: var(--white-color);
   background-image: none;
-  padding-top: 25px;
+  padding-top: 23px;
 }
 
 .subscribe .subscribe-title {
@@ -435,7 +445,7 @@ body {
   text-transform: uppercase;
   border-radius: 0 10px 10px 0px;
   width: 200px;
-  height: 60px;
+  min-height: 60px;
   padding: 0;
   margin: 0;
   margin-left: -6px;
@@ -483,6 +493,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 70px;
+  flex-wrap: wrap;
 }
 
 .footer-social-list {
@@ -491,6 +502,8 @@ body {
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
+  max-width: 150px;
+  min-height: 20px;
 }
 
 .footer-social-logo {
@@ -561,6 +574,10 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 }
+/*ЗАКРЫТЬ МОДАЛЬНОЕ ОКНО*/
+.modal-container-close {
+  display: none;
+}
 
 .modal {
   position: relative;
@@ -623,6 +640,13 @@ body {
   font-weight: 700;
   padding: 0;
   padding-left: 70px;
+  max-width: 125px;
+  flex-wrap: wrap;
+}
+
+.form-label-icon {
+  position: relative;
+  padding-right: 16px;
 }
 
 .field-group-adults {
@@ -685,6 +709,7 @@ body {
   position: relative;
   margin-top: -11px;
   margin-left: -10px;
+  cursor: pointer;
 }
 
 .tooltip-toggle:hover  {
@@ -792,14 +817,14 @@ body {
   background-color: #F2F2F2;
   appearance: textfield;
   -webkit-appearance: none;
-  margin-left: 64px;
+  margin-left: 48px;
   margin-top: -27px;
   padding: 0;
   cursor: pointer;
 }
 
 .childten-quantity {
-  margin-left: 48px;
+  margin-left: 33px;
   padding-left: 45px;
   padding-right: 45px;
   box-sizing: border-box;
@@ -818,7 +843,7 @@ body {
   border: none;
   border-radius: 4px;
   margin: 0;
-  margin-left: 36px;
+  margin-left: 19px;
   margin-top: -20px;
   padding: 0;
   padding-left: 19px;
@@ -872,7 +897,7 @@ body {
 }
 
 .departure-date {
-  margin-left: 30px;
+  margin-left: 14px;
   cursor: pointer;
 }
 
@@ -886,7 +911,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top:352px;
+  top:355px;
   left: 525px;
   border: none;
   cursor: pointer;
@@ -897,7 +922,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top:352px;
+  top:355px;
   left: 239px;
   border: none;
   cursor: pointer;
@@ -988,7 +1013,7 @@ margin: 0;
   flex-direction: column;
   margin: 0;
   flex-grow: 1;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .hotel-card {
@@ -1023,7 +1048,7 @@ margin: 0;
   display: flex;
   justify-content: space-between;
   width: 300px;
-  margin-top: -3px;
+  margin-top: -1px;
 }
 
 .flex-rating {
@@ -1032,6 +1057,7 @@ margin: 0;
   margin: 0;
   margin-top: 16px;
   width: 300px;
+  flex-wrap: wrap;
 }
 
 .rating-area-four {
@@ -1370,7 +1396,7 @@ input.range-input::placeholder {
 }
 
 .breadcrumbs {
-  width: 110px;
+  max-width: 110px;
 }
 
 .breadcrumbs:hover {
@@ -1413,7 +1439,7 @@ input.range-input::placeholder {
   text-transform: uppercase;
   margin-top: 17px;
   padding: 0;
-  width: 160px;
+  max-width: 160px;
   min-height: 48px;
   border-radius: 4px;
 }
@@ -1505,7 +1531,7 @@ input.range-input::placeholder {
   font-weight: 700;
   color: var(--black-color);
   text-decoration: none;
-  padding: 16px 0px;
+  padding: 14px 0px;
   margin: 0;
 }
 
@@ -1620,7 +1646,7 @@ input.range-input::placeholder {
   padding: 0;
   text-transform: uppercase;
   margin-left: 160px;
-  margin-top: -9px;
+  margin-top: -26px;
 }
 
 .hotel-card-image {
@@ -1656,8 +1682,8 @@ input.range-input::placeholder {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 4px;
   text-align: center;
   color: var(--white-color);
@@ -1729,10 +1755,12 @@ input.range-input::placeholder {
 .box-1,
 .box-2,
 .box-3 {
-  width: 400px;
-  height: 384px;
+  min-width: 400px;
+  min-height: 384px;
   margin: 0;
   text-align: center;
+  padding: 0;
+  margin-top: -3px;
   }
 
 .second-block {
